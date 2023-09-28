@@ -1,7 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: aliceblue; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {position:absolute; bottom: 0;}
+  </style>
+  <link rel="stylesheet" href="Css/Style.css">
+</head>
+<body>
+
+  <main id="main">
+    <section id="info">
+      <p class="info-top">Stay updated!</p>
+      <p id="info-text">Join +60,000+ product managers receiving monthly updates on: </p>
+      <div id="info-list">
+        <p class="list">Product discoveryand building what matters</p>
+        <p class="list">Measuring to ensure updates are a success</p>
+        <p class="list">And much more!</p>
+      </div>
+      <form id="form">
+        <div id="lable"><p>Email adress</p><p id="error"></p></div>
+        <input id="email" type="email" placeholder="name@example.com" name="email"/>
+      </form>
+      <button id="submit" class="button">Subscribe to monthly newsletter</button>
+    </section>
+    <section id="pic">
+      <div class="picture"></div>
+    </section>
+  </main>
+
+  <div id="submitted">
+    <img src="Images/Flat_tick.png" alt="tick">
+    <p class="info-top">
+      Thanks for Subscribing!
+    </p>
+    <p id="show-confirm"></p>
+    <button id="reset" class="button">Dismiss message</button>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sina Hashemi</a>
+  </div>
+  <script src="Js/Script.js"></script>
+</body>
 </html>
